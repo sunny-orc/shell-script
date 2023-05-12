@@ -16,3 +16,8 @@ cd lrzsz-0.12.20/
 make; make install
 ln -s /usr/local/bin/lrz /usr/local/bin/rz
 ln -s /usr/local/bin/lsz /usr/local/bin/sz
+
+# 安装 ss工具
+apk add iproute2 # ss vs netstat
+# 网络连接状态，-t显示TCP，-l显示监听的连接，-p连接关联的进程信息 
+ss -ptl
